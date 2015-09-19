@@ -1,13 +1,13 @@
--F
-  something
-  else
-  happening
-  here
+// These are line level comments
 
+ // -F Indicates that the listed strings are single files to be included
+-F
+  js_file
+  js_file2
+
+
+// -T indicates that the listed strings are entire directories to be includded
 -T
-  Also
-  something_happening
-  here
-  but
-  theres
-  another thing
+  js_directory
+  js_directory2
+  js_directory3 // This is an inline comment
