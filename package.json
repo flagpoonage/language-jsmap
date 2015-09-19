@@ -1,0 +1,10 @@
+{
+  "version": "0.0.1",
+  "name": "language-jsmap",
+  "description": "JS Map language support in Atom",
+  "license": "MIT",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  }
+}

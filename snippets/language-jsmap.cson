@@ -1,0 +1,4 @@
+'.source.jsmap':
+  'Array Comprehension':
+    'prefix': 'fora'
+    'body': 'for ${1:name} in ${2:array}\n  ${0:# body...}'

@@ -1,0 +1,41 @@
+'scopeName': 'source.jsmap'
+'name': 'JavaScript Mapping'
+'fileTypes': [
+  'jsmap'
+]
+'patterns': [
+  {
+    'captures':
+      '1':
+        'name': 'keyword'
+    'match': '^(-[FT])\\s+'
+    'comment': 'Match file/tree head'
+    'name': 'jsmap.header'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'string'
+      '2':
+        'name': 'punctuation.definition.comment.js'
+    'match': '^(.*?)(?=\/\/|$)'
+    'comment': 'Matches a string'
+    'name': 'jsmap.file'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'punctuation.definition.comment.js'
+    'match': '\\/\\/.*$'
+    'comment': 'Matches a comment'
+    'name': 'jsmap.comment'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'invalid.illegal'
+    'comment': 'Match invalid text on same line as file/tree head'
+    'match': '^-[FT][\\t ]+(?!\/\/)(?:$|([^\s]*))$'
+    'name': 'jsmap.header.invalidate'
+  }
+]
